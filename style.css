@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+.container-feedbacks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    margin: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 10px 10px 5px 1px rgba(209, 207, 209, 1);
+    border-radius: 15px;
+}
+.quote{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(./assets/icons/format-quote-open.svg);
+}
+.quote.green{
+    background-color: green;
+}
+.quote.pink{
+    background-color: pink;
+}
+.feedback-text{
+    flex-grow: 1;
+}
+.feedback-author{
+    margin: 0px;
+    padding-top: 20px;
+    font-size: 0.8em;
+}
+.feedback-author.green{
+    color: green;
+}
+.feedback-author.pink{
+    color: pink;
+}
+.feedback-author-profession{
+    margin: 0px;
+    font-size: 0.8em;
+}
+.feedback-author-company{
+    margin-bottom: 0px;
+    font-weight: bolder;
+}
+.feedback-author-company,
+.feedback-author-profession,
+.feedback-author{
+    text-align: right;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
